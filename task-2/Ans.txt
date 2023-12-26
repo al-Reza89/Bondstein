@@ -1,0 +1,27 @@
+Task 2: You are working on a dashboard using ReactJS and Tailwind CSS. The dashboard
+displays data charts which are fetched from a REST API. However, the charts are not updating
+in real-time as new data arrives from the API.
+
+
+
+Question: How would you troubleshoot and resolve this issue ensuring the charts update in
+real-time as the data changes? Explain your approach, potential challenges and the overall
+thought process.
+
+
+Answer:
+
+First Verify Data Flow and Confirm data is fetched correctly from the API. If the problem is not resolve than
+we can use this library to update realtime when data are changes.
+
+1. WebSocket or Server-Sent Events: 
+If the API supports it, consider using WebSocket 
+or Server-Sent Events for real-time updates. These technologies allow the server to
+push data to the client when it changes.
+
+2. Use Realtime-chart-library:
+Ensure that the charting library we are using supports dynamic updates. 
+Some charting libraries require explicit calls to update or redraw charts when the underlying data changes.
+
+
+By following this approach, We can identify potential issues and implement a solution that allows your ReactJS and Tailwind CSS dashboard to update the charts in real-time as new data arrives from the API.
